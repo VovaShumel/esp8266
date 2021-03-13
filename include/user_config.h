@@ -21,7 +21,11 @@
 // 2 -> пустой web
 // 3 — Таймер фитолампы
 // 4 — опрос платы с датчиками температуры, влажности, CO2
-
+// 5 - тест программирования STM8
+// 6 - тест программирования PIC16F18324
+// 7 - тест работы с многоцветными светодиодами
+// 8 - весы улья
+// 9 - туалетное занято
 #if PROGECT_NUMBER == 0 // TCP2UART
 	#define USE_WEB			80 	// включить в трансляцию порт Web, если =0 - по умолчанию выключен
 	#define WEBSOCKET_ENA  		// включить WEBSOCKET
@@ -72,6 +76,16 @@
 //#define USE_NETBIOS	1
 	#define USE_SNTP	1
 #elif PROGECT_NUMBER == 4 // опрос платы с датчиками температуры, влажности, CO2
+
+#elif PROGECT_NUMBER == 5 // тест программирования STM8
+
+#elif PROGECT_NUMBER == 6 // тест программирования PIC16F18324
+
+#elif PROGECT_NUMBER == 7 // тест работы с многоцветными светодиодами
+
+#elif PROGECT_NUMBER == 8 // весы улья
+
+#elif PROGECT_NUMBER == 9 // туалетное занято
 
 #endif // PROGECT_NAME
 
